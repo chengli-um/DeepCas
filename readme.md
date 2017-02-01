@@ -61,7 +61,20 @@ If you find *DeepCas* useful for your research, please consider citing the follo
 	 year = {2017}
 	}
 
+## Tensorflow Implementation
+### Prerequisites
+Tensorflow 0.12.1
 
-### Miscellaneous
+### Basic Usage
+To run *DeepCas* tensorflow version on a test data set, execute the following command:<br/>
+```{r, engine='bash', count_lines}
+cd DeepCas
+python gen_walks/gen_walks.py --dataset test-net
+cd tensorflow
+python preprocess.py
+python run.py
+```
+
+## Miscellaneous
 
 Please send any questions you might have about the code and/or the algorithm to <lichengz@umich.edu>.
