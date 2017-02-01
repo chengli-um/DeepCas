@@ -65,7 +65,7 @@ python preprocess.py
 python run.py
 ```
 
-### Citing
+## Citing
 If you find *DeepCas* useful for your research, please consider citing the following paper:
 
 	@inproceedings{DeepCas-www2017,
