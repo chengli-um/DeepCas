@@ -51,16 +51,6 @@ cascade_(train|val|test).txt list cascades, one cascade per line:
 "starter_id" are nodes who start the cascade, "num_nodes" counts the number of nodes in the cascade.
 Since we can predict cascade growth at different timepoints, there could be multiple labels. 
 
-### Citing
-If you find *DeepCas* useful for your research, please consider citing the following paper:
-
-	@inproceedings{DeepCas-www2017,
-	author = {Li, Cheng and Ma, Jiaqi and Guo, Xiaoxiao and Mei, Qiaozhu},
-	 title = {DeepCas: an End-to-end Predictor of Information Cascades},
-	 booktitle = {Proceedings of the 26th international conference on World wide web},
-	 year = {2017}
-	}
-
 ## Tensorflow Implementation
 ### Prerequisites
 Tensorflow 0.12.1
@@ -74,6 +64,16 @@ cd tensorflow
 python preprocess.py
 python run.py
 ```
+
+### Citing
+If you find *DeepCas* useful for your research, please consider citing the following paper:
+
+	@inproceedings{DeepCas-www2017,
+	author = {Li, Cheng and Ma, Jiaqi and Guo, Xiaoxiao and Mei, Qiaozhu},
+	 title = {DeepCas: an End-to-end Predictor of Information Cascades},
+	 booktitle = {Proceedings of the 26th international conference on World wide web},
+	 year = {2017}
+	}
 
 ## Miscellaneous
 
