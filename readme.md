@@ -59,10 +59,10 @@ Tensorflow 0.12.1
 To run *DeepCas* tensorflow version on a test data set, execute the following command:<br/>
 ```{r, engine='bash', count_lines}
 cd DeepCas
-python gen_walks/gen_walks.py --dataset test-net
+python2 gen_walks/gen_walks.py --dataset test-net
 cd tensorflow
-python preprocess.py
-python run.py
+python2 preprocess.py
+python2 run.py
 ```
 
 ## Citing

@@ -1,0 +1,4 @@
+*.pkl
+*.pyc
+*.txt
+env*/
