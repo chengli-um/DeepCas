@@ -46,10 +46,10 @@ def get_batch(x, y, sz, step, batch_size=128):
     return batch_x, batch_y, batch_sz
 
 version = config.version
-x_train, y_train, sz_train, vocabulary_size = pickle.load(open('data/data_train.pkl','r'))
-x_test, y_test, sz_test, _ = pickle.load(open('data/data_test.pkl','r'))
-x_val, y_val, sz_val, _ = pickle.load(open('data/data_val.pkl','r'))
-node_vec = pickle.load(open('data/node_vec.pkl', 'r'))
+x_train, y_train, sz_train, vocabulary_size = pickle.load(open('../data/data_train.pkl','r'))
+x_test, y_test, sz_test, _ = pickle.load(open('../data/data_test.pkl','r'))
+x_val, y_val, sz_val, _ = pickle.load(open('../data/data_val.pkl','r'))
+node_vec = pickle.load(open('../data/node_vec.pkl', 'r'))
 
 
 training_iters = config.training_iters

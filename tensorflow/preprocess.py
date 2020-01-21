@@ -119,7 +119,7 @@ for key,graph in graphs_train.items():
     y_data.append(np.log(y+1.0)/np.log(2.0))
     sz_data.append(sizes_train[key])
     
-pickle.dump((x_data, y_data, sz_data, index.length()), open('data/data_train.pkl','w'))
+pickle.dump((x_data, y_data, sz_data, index.length()), open('../data/data_train.pkl','w'))
 
 x_data = []
 y_data = []
@@ -137,7 +137,7 @@ for key,graph in graphs_val.items():
     y_data.append(np.log(y+1.0)/np.log(2.0))
     sz_data.append(sizes_val[key])
     
-pickle.dump((x_data, y_data, sz_data, index.length()), open('data/data_val.pkl','w'))
+pickle.dump((x_data, y_data, sz_data, index.length()), open('../data/data_val.pkl','w'))
 
 x_data = []
 y_data = []
@@ -155,7 +155,7 @@ for key,graph in graphs_test.items():
     y_data.append(np.log(y+1.0)/np.log(2.0))
     sz_data.append(sizes_test[key])
     
-pickle.dump((x_data, y_data, sz_data, index.length()), open('data/data_test.pkl','w'))
+pickle.dump((x_data, y_data, sz_data, index.length()), open('../data/data_test.pkl','w'))
 
 
 np.random.seed(13)
@@ -174,4 +174,4 @@ with open(DATA_PATH+'node_vec_50.txt', 'r') as f:
         node_vec[index.new(node_id), :] = np.array([float(temp[j]) for j in range(1, len(temp))])
         
         
-pickle.dump(node_vec, open('data/node_vec.pkl','w'))
+pickle.dump(node_vec, open('../data/node_vec.pkl','w'))
